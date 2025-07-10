@@ -4,17 +4,13 @@ object RecursionTest extends App {
 
   trait Abstract {
     def sum(x: Int, y: Int): Int
-
     def difference(x: Int, y: Int): Int
-
     def product(x: Int, y: Int): Int
   }
 
   class Implementation extends Abstract {
     def sum(x: Int, y: Int): Int = x + y
-
     def difference(x: Int, y: Int): Int = x - y
-
     def product(x: Int, y: Int): Int = x * y
 
     @tailrec
